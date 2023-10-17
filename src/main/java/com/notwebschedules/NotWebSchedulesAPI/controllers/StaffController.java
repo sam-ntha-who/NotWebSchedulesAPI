@@ -18,8 +18,6 @@ import com.notwebschedules.NotWebSchedulesAPI.repos.StaffRepository;
 
 @RestController
 public class StaffController {
-
-	// this api is where create the endpoints that we are calling with the dbservice
 	
 	@Autowired
 	private StaffRepository staffRepo;
@@ -29,9 +27,9 @@ public class StaffController {
 		return "index";
 	}
 	
-	// CRUD
+	// CRUD Functions
+	
 	// create staff member
-
 	@PostMapping("/create")
 	@ResponseStatus(HttpStatus.CREATED)
 	public Staff addStaff(@RequestBody Staff staff) {

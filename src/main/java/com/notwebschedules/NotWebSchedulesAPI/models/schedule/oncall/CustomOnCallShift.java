@@ -2,8 +2,8 @@ package com.notwebschedules.NotWebSchedulesAPI.models.schedule.oncall;
 
 public class CustomOnCallShift {
 	
-	private double startTime;
-	private double endTime;
+	private String startTime;
+	private String endTime;
 	private double shiftLength;
 	private boolean backup;
 	private boolean trauma;
@@ -12,9 +12,8 @@ public class CustomOnCallShift {
 
 	
 	
-	public CustomOnCallShift(double startTime, double endTime, double shiftLength, boolean backup, boolean trauma,
-			boolean hearts, boolean neuro) {
-		super();
+	public CustomOnCallShift(String startTime, String endTime, double shiftLength, 
+			boolean backup, boolean trauma, boolean hearts, boolean neuro) {
 		this.startTime = startTime;
 		this.endTime = endTime;
 		this.shiftLength = shiftLength;
@@ -23,16 +22,17 @@ public class CustomOnCallShift {
 		this.hearts = hearts;
 		this.neuro = neuro;
 	}
-	public double getStartTime() {
+	
+	public String getStartTime() {
 		return startTime;
 	}
-	public void setStartTime(double startTime) {
+	public void setStartTime(String startTime) {
 		this.startTime = startTime;
 	}
-	public double getEndTime() {
+	public String getEndTime() {
 		return endTime;
 	}
-	public void setEndTime(double endTime) {
+	public void setEndTime(String endTime) {
 		this.endTime = endTime;
 	}
 	public double getShiftLength() {
