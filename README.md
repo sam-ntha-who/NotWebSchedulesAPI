@@ -5,7 +5,7 @@ This is a surgical employee scheduling application, inspired by one that was in 
 For reasons unknown to me, the original app was no longer supported (by the creator) and the OR started using excel and a nurse scheduling app. It is not a good replacement at all and makes those needing to deal with schedules do about 10x the work of the app. This is created in the hopes that a new app can make the lives of the schedulers a little bit easier.
 
 ##WebApp
-The repository for the webapp is here: (link).
+The repository for the webapp is here: https://github.com/sam-ntha-who/NotWebSchedulesAPI/tree/main
 
 ##API
 This is the API to provide CRUD functions as well as a web application to access the data through a UI. If using/testing locally, you will need to run both at the same time, on different ports.
