@@ -1,4 +1,4 @@
-package com.notwebschedules.NotWebSchedulesAPI.models.staffInfo;
+package com.notwebschedules.NotWebSchedulesAPI.models.staff;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;

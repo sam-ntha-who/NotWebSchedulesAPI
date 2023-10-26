@@ -10,10 +10,11 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.notwebschedules.NotWebSchedulesAPI.models.staffInfo.Staff;
+import com.notwebschedules.NotWebSchedulesAPI.models.staff.Staff;
 import com.notwebschedules.NotWebSchedulesAPI.repos.StaffRepository;
 
 @RestController
@@ -30,7 +31,7 @@ public class StaffController {
 	// CRUD Functions
 	
 	// create staff member
-	@PostMapping("/create")
+	@PostMapping("/create-new-staff")
 	@ResponseStatus(HttpStatus.CREATED)
 	public Staff addStaff(@RequestBody Staff staff) {
 		staffRepo.insert(staff);
@@ -41,6 +42,12 @@ public class StaffController {
 	@GetMapping("/all-staff")
 	public List<Staff> findAllStaff() {
 		return staffRepo.findAll();
+	}
+	
+	@GetMapping("/staff-profile/{employeeId}")
+	public Staff findStaffById(@RequestParam String employeeId) {
+		Staff staff = staffRepo.findByEmployeeId(employeeId);
+		return staff;
 	}
 	
 	// delete staff member

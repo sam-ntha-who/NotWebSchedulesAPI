@@ -4,8 +4,8 @@ import java.util.List;
 
 import org.springframework.data.mongodb.repository.MongoRepository;
 
-import com.notwebschedules.NotWebSchedulesAPI.models.staffInfo.Role;
-import com.notwebschedules.NotWebSchedulesAPI.models.staffInfo.Staff;
+import com.notwebschedules.NotWebSchedulesAPI.models.staff.Role;
+import com.notwebschedules.NotWebSchedulesAPI.models.staff.Staff;
 
 public interface StaffRepository extends MongoRepository<Staff, String> {
 	

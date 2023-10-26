@@ -1,4 +1,4 @@
-package com.notwebschedules.NotWebSchedulesAPI.models.staffInfo;
+package com.notwebschedules.NotWebSchedulesAPI.models.staff;
 
 import com.notwebschedules.NotWebSchedulesAPI.exceptions.RoleNotFoundException;
 
